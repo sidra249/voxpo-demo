@@ -275,11 +275,9 @@ h3 {
   .navbar li a, .navbar .navbar-brand {
 	  transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
-	 margin-top: 10px;
-	  padding: 20px 30px 20px 30px;
-	  letter-spacing: 3px;
+	letter-spacing: 3px;
     color: #ffffff !important;
-	  background-color: #0B0A4C;
+	background-color: #0B0A4C;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
     transition: all 0.5s ease;
@@ -293,11 +291,9 @@ h3 {
 .navbar-collapse li a{
 	 transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
-	 margin-top: 10px;
-	  padding: 20px 30px 20px 30px;
-	  letter-spacing: 3px;
+	letter-spacing: 3px;
     color: #ffffff !important;
-	  background-color: #0B0A4C !important;
+	background-color: #0B0A4C !important;
 }
 .navbar-collapse li a:hover{
 	transition: all 0.5s ease;
@@ -330,8 +326,6 @@ h3 {
 .dropdown-menu li a, .navbar .navbar-brand {
 	transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
-	 margin-top: 10px;
-	  padding: 20px 30px 20px 30px;
 	  letter-spacing: 3px;
 	font: bolder !important;
     color: #ffffff !important;
