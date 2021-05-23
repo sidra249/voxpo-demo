@@ -167,6 +167,12 @@ h3 {
 	 font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
 	
 }
+.container{
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+}
   .container-fluid {
 	  font-size: 18px;
 	  padding-top: 30px;
