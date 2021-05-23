@@ -1,0 +1,437 @@
+@charset "utf-8";
+/* CSS Document */
+
+  body {
+    
+	  overflow-x: hidden;
+  }
+
+.animate-reveal {
+  
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+  
+  letter-spacing: 2px;
+  opacity: 0;
+  -webkit-animation: reveal 0.7s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+     -moz-animation: reveal 0.7s ease-in 1 normal forwards;
+       -o-animation: reveal 0.7s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+          animation: reveal 0.7s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+}
+
+.animate-first {
+  -webkit-animation-delay: 0;
+     -moz-animation-delay: 0;
+       -o-animation-delay: 0;
+          animation-delay: 0;
+}
+
+.animate-second {
+  -webkit-animation-delay: 500ms;
+     -moz-animation-delay: 500ms;
+       -o-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+.animate-third {
+  -webkit-animation-delay: 0.7s;
+     -moz-animation-delay: 0.7s;
+       -o-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+@-webkit-keyframes reveal {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+       -moz-transform: translateY(100%);
+         -o-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+       -moz-transform: translateY(0);
+         -o-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-moz-keyframes reveal {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+       -moz-transform: translateY(100%);
+         -o-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+       -moz-transform: translateY(0);
+         -o-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-o-keyframes reveal {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+       -moz-transform: translateY(100%);
+         -o-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+       -moz-transform: translateY(0);
+         -o-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+       -moz-transform: translateY(100%);
+         -o-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+       -moz-transform: translateY(0);
+         -o-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+h1 {
+	font-size: 40px !important;
+    text-transform: uppercase;
+    color: #0B0A4C !important ;
+    margin-top: 50px;
+    margin-bottom: 10px;
+	  text-align: center;
+	   font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	
+	
+}
+  h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #0B0A4C;
+    
+    margin-bottom: 10px;
+	  text-align: center;
+	   font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+  }
+h3 {
+    font-size: 24px;
+    line-height: 1.375em;
+    color: #41748f;
+
+    margin-bottom: 30px;
+	text-align: center;
+	 font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+  }  
+  h4 {
+    font-size: 19px;
+    color: #0B0A4C;
+    margin-bottom: 30px;
+	  text-align: center;
+	   font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+  } 
+
+
+  .jumbotron {
+	  background-image: url("images/vaping.jpeg");
+	  background-repeat: no-repeat;
+	background-blend-mode:soft-light;
+	margin-top: 50px;
+	  margin-bottom: 50px;
+	  padding: 50px;
+	  background-color: #84A5C4;
+    color: #0B0A4C;
+    font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+  }
+
+.modal-title {
+	
+	color: #0B0A4C !important;
+	font-weight: 700;
+	line-height: 1.375em;
+	margin-top: 30px;
+    margin-bottom: 30px;
+	text-align: center;
+	 font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	
+}
+  .container-fluid {
+	  font-size: 18px;
+	  padding-top: 30px;
+	  margin-bottom: 30px;
+	   color: #0B0A4C !important;
+    font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	
+  }
+.table-bordered{
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	border-bottom-color: #41748f;
+}
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+ 
+  
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #0B0A4C;
+  }
+  .carousel-indicators li {
+    border-color: #0B0A4C;
+  }
+  .carousel-indicators li.active {
+    background-color: #0B0A4C;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #41748f; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #41748f;
+    background-color: #fff !important;
+    color: #41748f;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #41748f !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+	  background-color:#0B0A4C !important; 
+   
+  }
+  .panel-footer img {
+    height: 27;
+	  width: 147;
+	  vertical-align: middle;
+	  align-content: left !important;
+	  margin: 5px;
+  }
+  .panel-footer a {
+    color: #fff;
+    font-size: 18px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #fff;
+    color: #fff;
+  }
+  .navbar {
+	  
+	  
+	  border: 0;
+    margin-bottom: 0;
+    background-color: #0B0A4C;
+    z-index: 400;
+    border: 0;
+    font-size: 16px !important;
+    line-height: 2.42857143 !important;
+	  font-weight: 600;
+    
+    border-radius: 0;
+    font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	  
+	
+  }
+  .navbar li a, .navbar .navbar-brand {
+	  transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+	 margin-top: 10px;
+	  padding: 20px 30px 20px 30px;
+	  letter-spacing: 3px;
+    color: #ffffff !important;
+	  background-color: #0B0A4C;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+	  letter-spacing: 4px;
+
+	color:#41748f !important;
+	  background-color: #0B0A4C;
+	
+  }
+.navbar-collapse li a{
+	 transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+	 margin-top: 10px;
+	  padding: 20px 30px 20px 30px;
+	  letter-spacing: 3px;
+    color: #ffffff !important;
+	  background-color: #0B0A4C !important;
+}
+.navbar-collapse li a:hover{
+	transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+	  letter-spacing: 4px;
+
+	color:#41748f !important;
+	  background-color: #0B0A4C !important;
+	
+}
+
+  
+ .navbar-default .navbar-toggle  {
+   
+    color: #ffffff !important;
+	  background-color: #0B0A4C;
+  }
+.navbar-default li a:hover, .navbar-toggle li.active a {
+   
+    color: #41748f !important;
+	  background-color: #0B0A4C;
+  }
+.dropdown-menu{
+	border: 0;
+	color: #ffffff !important;
+	    background-color: #0B0A4C;
+	    font-size: 14px !important;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+}
+.dropdown-menu li a, .navbar .navbar-brand {
+	transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+	 margin-top: 10px;
+	  padding: 20px 30px 20px 30px;
+	  letter-spacing: 3px;
+	font: bolder !important;
+    color: #ffffff !important;
+	  background-color: #0B0A4C;
+}
+
+.dropdown-menu li a:hover, .navbar-nav li.active a {
+   transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+	  letter-spacing: 4px;
+	color:#41748f !important;
+	  background-color: #0B0A4C;
+}
+.logo{
+	align-content: center;
+	margin-left: 30px;
+	
+}
+.img-circle img{
+
+	transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	border: outset  5px;
+	border-color: #41748f;
+	
+}
+
+.img-circle img:hover{
+	   transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+
+	width: 320px;
+	height:320px;
+	
+	border-radius: 50%;
+
+}
+  footer .glyphicon {
+    font-size: 20px;
+	  padding: 5px;
+   
+    color: #fff;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+ 
+
+.small {
+	height:  200px !important;
+	width: 200px !important;
+}
+
+.bg-primary {
+	background-color: #0B0A4C!important;
+}
