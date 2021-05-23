@@ -27,8 +27,8 @@
       <a class="logo" href="#"><img src="images/img/translogo.png" width="200" height="70" alt=""/></a>
     </div>
 	  <div class="collapse navbar-collapse" id="myNavbar">
-    <ul class="nav navbar-nav">
-      <li><a href="#"><span class="glyphicon glyphicon-blackboard"></span>AUDITORIUM</a></li>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-blackboard"></span> AUDITORIUM</a></li>
      <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-calendar"></span> EVENTS
         <span class="caret"></span></a>
@@ -38,7 +38,7 @@
           <li><a href="#">CBD LIVE</a></li>
         </ul>
       </li>
-		      <li><a href="#"><span class="glyphicon glyphicon-phone"></span>Contact Us</a></li>
+		      <li><a href="#"><span class="glyphicon glyphicon-phone"></span>  Contact Us</a></li>
 		<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
       <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
 
@@ -61,13 +61,23 @@
 <div class=" animate-reveal animate-first text-center col-sm-12">
    <div class="container-fluid table-bordered">
 	   <!--picture section-->
+	   
 <div class=" col-sm-4 text-center">
-  <a class="img-circle" href=""><img src="images/img/david lawson.png"  align="center" alt=""/>
-	  </a>
+	
+ <div id="social-holder">
+	   <i class="img-circle"><img src="images/img/david lawson.png"  align="center" alt=""/>
+	 </i></div>
+	<a href="https://facebook.com/" title="facebook" target="_blank"><i class="fa fa-facebook fa-2x circle-bg-fb"></i></a>
+  <a href="https://twitter.com/" title="twitter" target="_blank"><i class="fa fa-twitter fa-2x circle-bg-tw" ></i></a>
+  <a href="https://plus.google.com/" title="google-plus" target="_blank"><i class="fa fa-google-plus fa-2x circle-bg-g" ></i></a>
+  <a href="https://pinterest.com/" title="pinterest" target="_blank"><i class="fa fa-pinterest-p fa-2x circle-bg-p" ></i></a>
+	
+	    
 	<div class="slideanim">
 	<h3>David Lawson</h3>
 		<h4>CEO, Inter Scientific</h4>
-	</div>
+		</div>
+	
 </div>
 	   <!--Text section-->
 <div class="text-justify col-sm-8 container-fluid">
@@ -389,6 +399,21 @@ $(document).ready(function(){
   });
 })
 </script>
+<script>
+	$(document).ready(function(){
+  var elems = [$('i.circle-bg-fb'), $('i.circle-bg-tw'), $('i.circle-bg-p'), $('i.circle-bg-g')];
+  var cls = ["circle-bg-fb-end", "circle-bg-tw-end", "circle-bg-p-end", "circle-bg-g-end",];
 
+    $('div#social-holder').on("mouseenter", function(){
+        for(var i=0; i<elems.length; i++) {
+            elems[i].addClass(cls[i]);
+        };
+    }).on("click", function(){
+        for(var i=0; i<elems.length; i++) {
+            elems[i].removeClass(cls[i]);
+        };
+    });
+});
+</script>
 </body>
 </html>
