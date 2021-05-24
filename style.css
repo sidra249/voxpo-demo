@@ -224,7 +224,6 @@ h3 {
     font-style: normal;
   }
   .panel {
-    border: 1px solid #41748f; 
     border-radius:0 !important;
     transition: box-shadow 0.5s;
   }
@@ -368,8 +367,7 @@ h3 {
 
 }
   footer .glyphicon {
-    font-size: 20px;
-	  padding: 5px;
+  padding: 10px;
    
     color: #fff;
   }

@@ -266,11 +266,11 @@ Vivienne Tedesco-Ciavarra is a Fulbright Scholar with a career spanning the phar
 </div>
 
 <!-- Container (Portfolio Section) -->
-<div id="portfolio" class="container-fluid text-center jumbotron">
- 
+	<div id="portfolio" class="container-fluid text-center jumbotron">
+  
   
   <h2>What our customers say</h2>
-  <div class="carousel slide text-center" data-ride="carousel">
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -281,13 +281,13 @@ Vivienne Tedesco-Ciavarra is a Fulbright Scholar with a career spanning the phar
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <h4>"This company is the best. I am so happy with the result!"<br><span>Name, Company Name, Comment Box</span></h4>
+        <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
       </div>
       <div class="item">
-        <h4>"One word... WOW!!"<br><span>Name, Company Name, Comment Box</span></h4>
+        <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
       </div>
       <div class="item">
-        <h4>"Could I... BE any more happy with this company?"<br><span>Name, Company Name, Comment Box</span></h4>
+        <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
       </div>
     </div>
 
@@ -302,6 +302,7 @@ Vivienne Tedesco-Ciavarra is a Fulbright Scholar with a career spanning the phar
     </a>
   </div>
 </div>
+
 
 
 
@@ -345,48 +346,47 @@ Vivienne Tedesco-Ciavarra is a Fulbright Scholar with a career spanning the phar
 
 </div>
 
-<footer class="container-fluid text-center panel-footer">
+<footer class="text-center panel-footer row">
+	<div class="col-sm-12">
+	<div class="col-sm-4">
 	 
-       <a href="" class="panel-footer pull-left"><span class="glyphicon glyphicon-lock"></span>Privacy Policy</a>
+       <a href="" class=" pull-left"><span class="glyphicon glyphicon-lock fa-md "></span>Privacy Policy</a>
     
-     
-
+     </div>
+<div class="col-sm-4 center-block">
 	     
-	 <a href="#myPage" title="To Top">
-    <span class="glyphicon glyphicon-chevron-up glyphicon-align-center"></span>
-  </a>
-	
-	
- 
-		<a class="pull-right" href=""><img alt="" height="27" width="147" class="pull-left" src="images/hall-logo.jpg"></a>
-	<a class="pull-right" href="">	<img alt="" class="" src="images/vfairs-logo.png">
+	<a  class="pull-left" href=""><img alt="" height="27" width="147" src="images/hall-logo.jpg"></a>
+	<a  class="pull-left" href="">	<img alt="" src="images/vfairs-logo.png">
 </a>
-		 
+	
+		</div>
+ <div class="col-sm-4">
+	  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up glyphicon-align-center pull-right"></span>
+  </a>
+		
+	</div>
+		</div>
+		
 </footer>
 		
 
 <script>
 $(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
-      // Prevent default anchor click behavior
       event.preventDefault();
 
       // Store hash
       var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 900, function(){
    
-        // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
-    } // End if
+    } 
   });
   
   $(window).scroll(function() {
