@@ -58,19 +58,20 @@
 <!--Container (Team Section)-->	
 	<div class="container">
 		<!--1st-->	
-<div class=" animate-reveal animate-first text-center col-sm-12">
-   <div class="container-fluid table-bordered">
+<div class="text-center row">
+   <div class="container-fluid table-bordered col-md-12">
 	   <!--picture section-->
 	   
-<div class=" col-sm-4 text-center">
+<div class=" col-sm-4">
 	
  <div id="social-holder">
-	   <i class="img-circle"><img src="images/img/david lawson.png"  align="center" alt=""/>
+	   <i><img class="img-responsive img-circle center-block" src="images/img/david lawson.png"  alt=""/>
 	 </i></div>
+	<a id="close" ><i class="fa fa-times-circle fa-2x circle-bg-times"></i></a>
 	<a href="https://facebook.com/" title="facebook" target="_blank"><i class="fa fa-facebook fa-2x circle-bg-fb"></i></a>
   <a href="https://twitter.com/" title="twitter" target="_blank"><i class="fa fa-twitter fa-2x circle-bg-tw" ></i></a>
-  <a href="https://plus.google.com/" title="google-plus" target="_blank"><i class="fa fa-google-plus fa-2x circle-bg-g" ></i></a>
-  <a href="https://pinterest.com/" title="pinterest" target="_blank"><i class="fa fa-pinterest-p fa-2x circle-bg-p" ></i></a>
+  <a href="https://plus.google.com/" title="linked-in" target="_blank"><i class="fa fa-linkedin fa-2x circle-bg-i" ></i></a>
+  <a href="https://pinterest.com/" title="instagram" target="_blank"><i class="fa fa-instagram fa-2x circle-bg-in" ></i></a>
 	
 	    
 	<div class="slideanim">
@@ -80,7 +81,7 @@
 	
 </div>
 	   <!--Text section-->
-<div class="text-justify col-sm-8 container-fluid">
+<div class="text-justify col-sm-8">
 	
 <h2 class="text-left">
 	PMTA and beyond; a global outlook on ENDS regulatory requirements</h2>
@@ -94,9 +95,10 @@ David specialises in regulatory strategy with a focus on reduced-risk products a
 		
 
 <!-- 2nd -->
-	  <div class="container-fluid table-bordered ">
+	  <div class="text-center row">
+   <div class="container-fluid table-bordered col-md-12">
 		  <!--Text Section-->
-		<div class="text-justify col-sm-8 container-fluid">
+		<div class="text-justify col-sm-8">
 	
 <h2 class="text-left">
 	Development of analytical testing of e-cigarettes</h2>
@@ -105,9 +107,10 @@ David specialises in regulatory strategy with a focus on reduced-risk products a
 Chris joined British American Tobacco in 2008 following a storied career in academia and industry. He became Head of Analytical Science in 2012 and established leading edge approaches for the analysis of cigarette smoke, nicotine delivery products and other active substances. Chris is a Fellow of the Royal Society of Chemistry and a Chartered Chemist. He has authored and co-authored numerous manuscripts in the areas of dioxins in food, analysis of chemical contaminants and untargeted approaches for the analysis of complex chemical mixtures in aerosols.    </p>
 </div>
 		  <!--Picture section-->
-		<div class="col-sm-4 container-fluid">
-  <a class="img-circle" href=""><img src="images/img/chris wright.png"  align="center" alt=""/>
-	  </a>
+		<div class="col-sm-4">
+  	
+ <img class="img-responsive img-circle center-block" src="images/img/chris-wright.png"  alt=""/>
+	 
 	<div class="slideanim">
 	<h3>Christopher Wright</h3>
 		<h4>Head of Analytical Science, BAT</h4>
@@ -116,13 +119,16 @@ Chris joined British American Tobacco in 2008 following a storied career in acad
 
 
 		</div>
-<!--3rd-->	
-<div class=" animate-reveal animate-first text-center col-sm-12">
-   <div class="container-fluid table-bordered">
+		</div>
+<!--3rd-->
+		  <div class="text-center row">
+
+<div class="container-fluid table-bordered col-md-12">
+
 	   <!--picture section 1-->
 <div class=" col-sm-3 text-center">
-  <a class="img-circle" href=""><img class="small" src="images/img/robin-lea.jpg"  align="center" alt=""/>
-	  </a>
+  <img class="img-circle img-responsive" src="images/img/robin-lea.jpg"  align="center" alt=""/>
+	  
 	
 	  
 	<div class="slideanim">
@@ -144,8 +150,8 @@ Starting in the ENDS team at Hall Analytical in August 2019, Robin now works as 
 </div>
 	 <!--picture section 2-->
 	   <div class=" col-sm-3 text-center">
-  <a class="img-circle" href=""><img class="small" src="images/img/sydney-singleton.jpg"  align="center" alt=""/>
-		   </a>
+ <img class="img-circle img-responsive" src="images/img/sydney-singleton.jpg"  align="center" alt=""/>
+		   
 	<div class="slideanim">
 	<h3>Sydney Singleton</h3>
 		<h4>Laboratory Technician, Hall Analytical</h4>
@@ -155,8 +161,9 @@ Starting in the ENDS team at Hall Analytical in August 2019, Robin now works as 
 
 </div>
 	<!--4th-->
-	<div class=" animate-reveal animate-first text-center col-sm-12">
-   <div class="container-fluid table-bordered">
+		  
+ <div class="text-center row">
+   <div class="container-fluid table-bordered col-md-12">
 	   <!--picture section-->
 <div class=" col-sm-4 text-center">
   <a class="img-circle" href=""><img src="images/img/Irene Abraham.png"  align="center" alt=""/>
@@ -398,22 +405,23 @@ $(document).ready(function(){
     });
   });
 })
-</script>
-<script>
-	$(document).ready(function(){
-  var elems = [$('i.circle-bg-fb'), $('i.circle-bg-tw'), $('i.circle-bg-p'), $('i.circle-bg-g')];
-  var cls = ["circle-bg-fb-end", "circle-bg-tw-end", "circle-bg-p-end", "circle-bg-g-end",];
 
-    $('div#social-holder').on("mouseenter", function(){
+	$(document).ready(function(){
+  var elems = [$('i.circle-bg-fb'), $('i.circle-bg-tw'), $('i.circle-bg-in'), $('i.circle-bg-i'),$('i.circle-bg-times')];
+  var cls = ["circle-bg-fb-end", "circle-bg-tw-end", "circle-bg-in-end", "circle-bg-i-end","circle-bg-times-end",];
+
+    $('div#social-holder').on("click", function(){
         for(var i=0; i<elems.length; i++) {
             elems[i].addClass(cls[i]);
         };
-    }).on("click", function(){
+    })
+		 $('a#close').on("click", function(){
         for(var i=0; i<elems.length; i++) {
             elems[i].removeClass(cls[i]);
         };
     });
 });
 </script>
-</body>
+
+		</body>
 </html>

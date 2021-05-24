@@ -353,9 +353,6 @@ h3 {
 
 	transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
-	width: 300px;
-	height: 300px;
-	border-radius: 50%;
 	border: outset  5px;
 	border-color: #41748f;
 	
@@ -364,9 +361,7 @@ h3 {
 .img-circle img:hover{
 	   transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
-
-	width: 320px;
-	height:320px;
+	
 	
 	border-radius: 50%;
 
@@ -463,6 +458,11 @@ h3 {
   background: #007bb5;
   color: white;
 }
+.fa-times-circle{
+	background: #007bb5;
+  color: white;
+	
+}
 
 #social-holder {
   
@@ -475,10 +475,11 @@ h3 {
     left: 15px;
     color: #FFF;
 }
-.circle-bg-p,
+.circle-bg-in,
 .circle-bg-tw,
-.circle-bg-g,
-.circle-bg-fb{
+.circle-bg-i,
+.circle-bg-fb
+{
     width: 50px;
     height: 50px;
     display: box;
@@ -490,6 +491,24 @@ h3 {
     margin: 5px 0 0 5px;
     z-index: -1;
 }
+.circle-bg-times{
+	width: 50px;
+    height: 50px;
+    display: box;
+    color: #fff;
+	background-color: rgba(0,0,0,0) !important;
+    border-radius: 50%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 5px 0 0 5px;
+	cursor: pointer;
+    z-index: -1;
+	
+}.circle-bg-times:hover{
+	color: #0B0A4C;
+	
+}
 .circle-bg-fb {
     position: absolute;
     background-color: #3b5998;
@@ -499,8 +518,8 @@ h3 {
     transition:all 1s;
 }
 .circle-bg-fb-end {
-    top: 320px;
-    left: 110px;
+    top: 70%;
+    left: 36%;
 	z-index:auto;
     -webkit-transition:all 1s;
     transition:all 1s;
@@ -514,41 +533,58 @@ h3 {
     transition:all 1s;
 }
 .circle-bg-tw-end {
-    top: 320px;
-    left: 180px;
+    top: 70%;
+    left: 51%;
 	z-index: auto;
     -webkit-transition:all 1s;
     transition:all 1s;
 }
-.circle-bg-p {
+.circle-bg-in {
     position: absolute;  
-    background-color: #BD081C;
+    background-color: #8a3ab9;
     top: 40%;
     left: 40%;
     -webkit-transition:all 1s;
     transition:all 1s;
     
 }
-.circle-bg-p-end {
-    top: 300px;
-    left: 250px;
-	z-index: auto;
+.circle-bg-in-end {
+    top: 66%;
+    left: 21%;
+		z-index:auto;
     -webkit-transition:all 1s;
     transition:all 1s;
 }
-.circle-bg-g {
+.circle-bg-i {
     position: absolute;
-    background-color: #D34836;
+    background-color: #0e76a8;
     top: 40%;
     left: 40%;
     -webkit-transition:all 1s;
     transition:all 1s;
 }
-.circle-bg-g-end {
-    top: 300px;
-    left: 40px;
-	z-index: auto;
+.circle-bg-i-end {
+    top: 66%;
+    left: 66%;
+		z-index:auto;
     -webkit-transition:all 1s;
     transition:all 1s;
 }
+.circle-bg-times{
+	 position: absolute;
+    background-color: #0e76a8;
+    top: 40%;
+    left: 40%;
+    -webkit-transition:all 1s;
+    transition:all 1s;
+}
+.circle-bg-times-end{
+	top: 50%;
+    left: 42%;
+		z-index:auto;
+    -webkit-transition:all 1s;
+    transition:all 1s;
+	
+}
+
 
