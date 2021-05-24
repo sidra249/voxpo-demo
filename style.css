@@ -178,7 +178,7 @@ h3 {
 	  font-size: 18px;
 	  padding-top: 30px;
 	  margin-bottom: 30px;
-	   color: #0B0A4C !important;
+	   color: #000 !important;letter-spacing: 0;
     font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
 	
   }
