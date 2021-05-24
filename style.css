@@ -5,6 +5,7 @@
     
 	  overflow-x: hidden;
   }
+#more {display: none;}
 
 .animate-reveal {
   
@@ -107,7 +108,7 @@
   }
 }
 h1 {
-	font-size: 40px !important;
+	font-size: 3.5vw !important;
     text-transform: uppercase;
     color: #0B0A4C !important ;
     margin-top: 50px;
@@ -118,7 +119,7 @@ h1 {
 	
 }
   h2 {
-    font-size: 30px;
+    font-size: 3vw;
     text-transform: uppercase;
     color: #0B0A4C;
     
@@ -127,7 +128,7 @@ h1 {
 	   font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
   }
 h3 {
-    font-size: 24px;
+    font-size: 2vw;
     line-height: 1.375em;
     color: #41748f;
 
@@ -136,7 +137,7 @@ h3 {
 	 font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
   }  
   h4 {
-    font-size: 19px;
+    font-size: 1.5vw;
     color: #0B0A4C;
     margin-bottom: 30px;
 	  text-align: center;
